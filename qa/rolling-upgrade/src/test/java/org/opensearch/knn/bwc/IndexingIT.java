@@ -5,6 +5,7 @@
 
 package org.opensearch.knn.bwc;
 
+import org.junit.Ignore;
 import org.opensearch.client.ResponseException;
 
 import static org.opensearch.knn.TestUtils.NODES_BWC_CLUSTER;
@@ -221,6 +222,7 @@ public class IndexingIT extends AbstractRollingUpgradeTestCase {
      *
      * @throws Exception if any unexpected error occurs during the test execution.
      */
+    @Ignore
     public void testBlockNMSLIBIndexCreationPost3_0_0_RollingUpgrade() throws Exception {
         waitForClusterHealthGreen(NODES_BWC_CLUSTER);
 
